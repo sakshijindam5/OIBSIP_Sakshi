@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>complete responsive personal portfolio website desgin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- header section starts  -->
+<header class="header">
+    <div class="user">
+        <img src="imgs/photo.jpg" alt="">
+        <h3>sakshi jindam</h3>
+        <p>front-end developer</p>
+    </div>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
+    </nav>
+</header>
+<!-- header section ends -->
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>sakshi jindam</h3>
+        <p>i am a front-end developer</p>
+        <a href="#" class="btn">download CV</a>
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/sakshijindam5/" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/sakshi-jindam-45218926b/" class="fab fa-linkedin"></a>
+        <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+    </div>
+</section>
+<!-- home section ends -->
+
+<!-- about section starts  -->
+<section class="about" id="about">
+    <h1 class="heading"> about me </h1>
+    <div class="row">
+        <div class="content">
+            <h3>my name is sakshi jindam</h3>
+            <p>i am final year BCA student from solapur, maharashtra. i am a web developer with experties in front-end development. i like to work in teams.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="progress">
+            <div class="progress-row1">
+                <div class="html">
+                    <img src="imgs/html.png" alt="">
+                    <h3> HTML</h3>
+                </div>
+                <div class="css">
+                    <img src="imgs/css-3.png" alt="">
+                    <h3> CSS</h3>
+                </div>
+                <div class="js">      
+                    <img src="imgs/js.png" alt="">
+                    <h3> javascript</h3>
+                </div>
+            </div>    
+            <div class="progress-row2">
+                <div class="python">
+                    <img src="imgs/python.png" alt="">
+                    <h3>pyhton</h3>
+                </div>
+                <div class="c">
+                    <img src="imgs/letter-c.png" alt="">
+                    <h3>c language</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- services section starts  -->
+<section class="services" id="services">
+    <h1 class="heading"> my services</h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>web design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-mobile"></i>
+            <h3>responsive design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>
+    </div>
+</section>
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+<section class="portfolio" id="portfolio">
+    <h1 class="heading"> my <span>portfolio</span> </h1>
+    <div class="box-container">
+        <div class="container1">
+            <div class="box">
+                <img src="imgs/pexels-lisa-fotios-16129877.jpg" alt="">
+                <div class="content">
+                    <h3>Landing Page</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imgs/pexels-mikael-blomkvist-6476587.jpg" alt="">
+                <div class="content">
+                    <h3>responsive navbar</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="box">
+                <img src="imgs/pexels-negative-space-160107.jpg" alt="">
+                <div class="content">
+                    <h3>tempreture coverter</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imgs/pexels-cottonbro-studio-3584923.jpg" alt="">
+                <div class="content">
+                    <h3>cafe website</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- portfolio section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+    <h1 class="heading">contact Me </h1>
+    <form action="">
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="text" placeholder="subject" class="box">
+        <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+</section>
+<!-- contact section ends -->
+
+
+<div class="credits"> created by Sakshi Jindam| all rights reserved </div>
+<script>
+    let menu = document.querySelector('#menu-btn');
+    let header = document.querySelector('.header');
+
+menu.onclick = () =>{
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+}
+</script>
+
+</body>
+</html>
