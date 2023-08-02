@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HeadPhone</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+} 
+
+html {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+}
+
+a {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+header {
+    margin: 3rem 5rem;
+}
+
+.logo a {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: -4rem;
+    /* z-index: 10; */
+    /* transition: all linear 0.5s; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-size: 1.2rem;
+}
+nav ul li a:hover{
+    color: grey;
+}
+nav ul li button {
+    background-color: rgb(153, 17, 153);
+    border-radius: 15px;
+}
+
+nav ul li button:hover {
+    border-color: grey;
+}
+
+nav ul li button a {
+    padding: 1rem 1.5rem;
+    display: block;
+}
+
+.hero {
+    display: flex;
+    margin: auto 5rem;
+}
+
+.hero .action-container h1 {
+    font-size: 3.5rem;
+    margin-top: 4rem;
+}
+
+.hero .action-container p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hero .action-container button {
+    background-color: rgb(153, 17, 153);
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.hero .action-container button:hover {
+    border-color: grey;
+
+}
+
+.hero .action-container button a {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    display: block;
+    text-decoration: none;
+}
+
+.hero .img-container {
+    width: 50%;
+    height: 40%;
+    margin-left:10rem;
+}
+
+.hero .img-container img {
+    width: 20rem;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="">HEADPHONE</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Categories</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Sign In</a></li>
+          <li>
+            <button><a href="">Sign Up</a></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="action-container">
+        <h1>Listening Music Becomes Fun</h1>
+        <p>Get the experience of listening to music to be more fun and exciting</p>
+        <button><a href="">Shop Now</a></button>
+      </div>
+      <div class="img-container">
+        <img src="headphones.png" />
+      </div>
+    </section>
+  </body>
+</html>
